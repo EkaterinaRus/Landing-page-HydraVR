@@ -1,1 +1,2 @@
-Этот лендинг создан с использованием HTML, CSS и JavaScript для добавления интерактивности.
+### Skills
+<img src="https://skillicons.dev/icons?i=html,css,js" />
