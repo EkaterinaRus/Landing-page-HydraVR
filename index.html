@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hydra</title>
 
@@ -25,14 +26,14 @@
         <div class="header__inner">
           <div class="logo-container">
             <div class="logo">
-              <a class="logo__link" href="#">
-                <img class="logo__img" src="./icons/logo.svg" alt="Hydra Logo" />
+              <a class="logo__link" href="">
+                <img class="logo__img" src="./icons/logo.svg" alt="Hydra Logo" loading="lazy" />
               </a>
             </div>
 
             <div class="logo-text">
               <a class="logo-text__link" href="">
-                <img class="logo-text__img" src="./icons/logo_text.svg" alt="" />
+                <img class="logo-text__img" src="./icons/logo_text.svg" alt="Hydra Logo Text" loading="lazy" />
               </a>
             </div>
           </div>
@@ -84,50 +85,50 @@
 
     <main class="main">
       <h1 class="visually-hidden">HYDRA Virtual Reality</h1>
+
       <section class="hero">
         <div class="container">
           <div class="hero__inner">
-            <div class="content-container">
+            <div class="content-container hero__container">
               <div class="hero__content">
-                <div class="hero__title">
-                  <span class="text-gradient">Dive</span> Into The Depths<br />
-                  Of<span class="text-gradient"> Virtual Reality</span>
+                <h2 class="hero__title">
+                  <span class="text-gradient">Dive</span><span class="text-st"> Into The Depths</span><br />
+                  <span class="text-st">Of</span><span class="text-gradient"> Virtual Reality</span>
+                </h2>
+                <div class="hero__text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae .</p>
                 </div>
-                <p class="hero__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae .
-                </p>
                 <a class="btn btn-gradient btn-long hero__btn" href="#">BUILD YOUR WORLD</a>
               </div>
-
-              <div class="hero__img">
-                <img class="img" src="./img/hero/vr_woman.jpg" alt="Young woman in virtual reality glasses" width="490" height="426" />
+              <div class="hero__img-container">
+                <img class="hero__img" src="./img/hero/vr_woman.jpg" alt="Young woman in virtual reality glasses" width="490" height="426" loading="lazy" />
               </div>
             </div>
 
             <div class="contact">
               <div class="contact__container swiper-contact">
-                <ul class="swiper-wrapper contact-info__list">
-                  <li class="contact-info__item contact-info__item--location swiper-slide">
-                    <img class="contact-info__item-icon" src="./icons/location.svg" alt="" />
-                    <div class="contact-info__item-content contact-info__item-content--location">
-                      <div class="contact-info__item-title">Pay Us a Visit</div>
-                      <p class="contact-info__item-text">Union St, Seattle, WA 98101, United States</p>
+                <ul class="swiper-wrapper contact__list">
+                  <li class="contact__item contact__item--location swiper-slide">
+                    <img class="contact__icon" src="./icons/location.svg" alt="" />
+                    <div class="contact__content contact__content--location">
+                      <h3 class="contact__title">Pay Us a Visit</h3>
+                      <p class="contact__text">Union St, Seattle, WA 98101, United States</p>
                     </div>
                   </li>
 
-                  <li class="contact-info__item contact-info__item--phone swiper-slide">
-                    <img class="contact-info__item-icon contact-info__item-icon--phone" src="./icons/phone.svg" alt="" />
-                    <div class="contact-info__item-content">
-                      <div class="contact-info__item-title">Give Us a Call</div>
-                      <p class="contact-info__item-text">(110) 1111-1010</p>
+                  <li class="contact__item contact__item--phone swiper-slide">
+                    <img class="contact__icon contact__icon--phone" src="./icons/phone.svg" alt="" />
+                    <div class="contact__content">
+                      <h3 class="contact__title">Give Us a Call</h3>
+                      <p class="contact__text">(110) 1111-1010</p>
                     </div>
                   </li>
 
-                  <li class="contact-info__item contact-info__item--mail swiper-slide">
-                    <img class="contact-info__item-icon contact-info__item-icon--mail" src="./icons/mail.svg" alt="" />
-                    <div class="contact-info__item-content">
-                      <div class="contact-info__item-title">Send Us a Message</div>
-                      <p class="contact-info__item-text">Contact@HydraVTech.com</p>
+                  <li class="contact__item contact__item--mail swiper-slide">
+                    <img class="contact__icon contact__icon--mail" src="./icons/mail.svg" alt="" />
+                    <div class="contact__content">
+                      <h3 class="contact__title">Send Us a Message</h3>
+                      <p class="contact__text">Contact@HydraVTech.com</p>
                     </div>
                   </li>
                 </ul>
@@ -143,35 +144,41 @@
       <section class="about">
         <div class="container">
           <div class="row row-introduction">
-            <div class="content-container">
-              <div class="title title-introduction">
+            <div class="content-container introduction">
+              <div class="title introduction__title">
                 <h2 class="title__row1 title__row1--introduction">INTRODUCTION</h2>
                 <p class="title__row2 title__row2--introduction">TO HYDRA VR</p>
               </div>
-
-              <p class="text text-introduction">
-                Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa
-                tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
-              </p>
+              <div class="text introduction__text">
+                <p>
+                  Vitae sapien pellentesque habitant morbi tristique senectus et netus et. 
+                  Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris 
+                  commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. 
+                  Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="about__inner">
-            <div class="content-container1">
-              <img class="about__img" src="./img/about/vr_man.jpg" alt="Man wearing virtual reality glasses" width="524" height="557"/>
+            <div class="content-container about__container">
+              <img class="about__img" src="./img/about/vr_man.jpg" alt="Man wearing virtual reality glasses" width="524" height="557" loading="lazy" />
 
               <div class="about__content">
-                <div class="title title-about">
+                <div class="title about__title">
                   <h2 class="title__row1 title__row1--about">ABOUT</h2>
                   <p class="title__row2">HYDRA VR</p>
                 </div>
-
-                <p class="text text-about">
-                  Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat
-                  orci. Aenean et tortor at risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet sed. Consequat semper viverra nam libero
-                  justo laoreet sit amet. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
-                  retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n tempor.
-                </p>
+                <div class="text about__text">
+                  <p>
+                    Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. 
+                    Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at 
+                    risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat 
+                    imperdiet sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam etiam erat velit 
+                    scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec ac odio tempor 
+                    orci dapibus. Sem nulla pha retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n tempor.
+                  </p>
+                </div>
                 <button class="btn btn-gradient btn-long">LET’S GET IN TOUCH</button>
               </div>
             </div>
@@ -184,15 +191,16 @@
           <div class="services__inner">
             <div class="row row-services">
               <div class="content-container">
-                <div class="title title-services">
+                <div class="title services__title">
                   <h2 class="title__row1 title__row1--services">WHY BUILD</h2>
                   <p class="title__row2 title__row2--services">WITH HYDRA?</p>
                 </div>
-
-                <p class="text text-services">
-                  Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa
-                  tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
-                </p>
+                <div class="text services__text">
+                  <p>
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa
+                    tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -203,11 +211,13 @@
                     <div class="card">
                       <div class="card__content">
                         <div class="card__image">
-                          <img class="image" src="./img/services/simulation.jpg" alt="" width="190" height="190"/>
+                          <img class="image" src="./img/services/simulation.jpg" alt="Young woman in virtual reality glasses with controllers in hands" width="190" height="190" loading="lazy" />
                         </div>
                         <h3 class="card__title">SIMULATION</h3>
-                        <img class="card__line" src="img/line-gorizontal.svg" alt="Young woman in virtual reality glasses with controllers in hands" />
-                        <p class="card__text">Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                        <div class="card__text">
+                          <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                        </div>
+
                         <button class="btn btn-gradient card__btn">TRY IT NOW</button>
                       </div>
                     </div>
@@ -216,11 +226,12 @@
                     <div class="card">
                       <div class="card__content">
                         <div class="card__image">
-                          <img class="image" src="./img/services/education.jpg" alt="" width="190" height="190"/>
+                          <img class="image" src="./img/services/education.jpg" alt="Guy wearing virtual reality glasses" width="190" height="190" loading="lazy" />
                         </div>
                         <h3 class="card__title">EDUCATION</h3>
-                        <img class="card__line" src="img/line-gorizontal.svg" alt="Guy wearing virtual reality glasses" />
-                        <p class="card__text">Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                        <div class="card__text">
+                          <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                        </div>
                         <button class="btn btn-gradient card__btn">TRY IT NOW</button>
                       </div>
                     </div>
@@ -229,11 +240,12 @@
                     <div class="card">
                       <div class="card__content">
                         <div class="card__image">
-                          <img class="image" src="./img/services/self-care.jpg" alt="Young woman in lotus position wearing virtual reality glasses" width="190" height="190"/>
+                          <img class="image" src="./img/services/self-care.jpg" alt="Young woman in lotus position wearing virtual reality glasses" width="190" height="190" loading="lazy" />
                         </div>
                         <h3 class="card__title">SELF-CARE</h3>
-                        <img class="card__line" src="img/line-gorizontal.svg" alt="" />
-                        <p class="card__text">Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                        <div class="card__text">
+                          <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                        </div>
                         <button class="btn btn-gradient card__btn">TRY IT NOW</button>
                       </div>
                     </div>
@@ -242,11 +254,12 @@
                     <div class="card">
                       <div class="card__content">
                         <div class="card__image">
-                          <img class="image" src="./img/services/outdoor.jpg" alt="Man wearing virtual reality glasses in nature" width="190" height="190"/>
+                          <img class="image" src="./img/services/outdoor.jpg" alt="Man wearing virtual reality glasses in nature" width="190" height="190" loading="lazy" />
                         </div>
                         <h3 class="card__title">OUTDOOR</h3>
-                        <img class="card__line" src="img/line-gorizontal.svg" alt="" />
-                        <p class="card__text">Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                        <div class="card__text">
+                          <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                        </div>
                         <button class="btn btn-gradient card__btn">TRY IT NOW</button>
                       </div>
                     </div>
@@ -255,12 +268,12 @@
               </div>
               <div class="swiper-btn btn-next-services swiper-button-lock">
                 <div class="btn-swiper">
-                  <img src="/img/btn-swiper-right.png" alt="" />
+                  <img src="./img/swiper/btn-swiper-right.png" alt="" />
                 </div>
               </div>
               <div class="swiper-btn btn-prev-services swiper-button-lock">
                 <div class="btn-swiper">
-                  <img src="/img/btn-swiper-left.png" alt="" />
+                  <img src="./img/swiper/btn-swiper-left.png" alt="" />
                 </div>
               </div>
             </div>
@@ -269,16 +282,15 @@
       </section>
 
       <section class="tech">
-        <h2 class="visually-hidden">TECH</h2>
         <div class="container">
           <div class="tech__inner">
             <div class="image-container">
               <picture>
-                <img src="img/Mask group (5).png" alt="Your Image" />
+                <img src="./img/tech/tech-img.png" alt="Your Image" />
               </picture>
 
               <div class="text-overlay">
-                <div class="title title-tech">
+                <div class="title tech__title">
                   <h2 class="title__row1 title__row1--tech">TECHNOLOGIES & HARDWARE</h2>
                   <p class="title__row2 title__row2--tech">USED BY HYDRA VR.</p>
                 </div>
@@ -297,34 +309,34 @@
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide">
                     <div class="tech-card">
-                      <img src="img/tech-unreal.png" alt="" />
+                      <img src="./img/tech/tech-unreal.png" alt="" />
                     </div>
                   </li>
                   <li class="swiper-slide">
                     <div class="tech-card">
-                      <img src="img/tech-unity.png" alt="" />
+                      <img src="./img/tech/tech-unity.png" alt="" />
                     </div>
                   </li>
                   <li class="swiper-slide">
                     <div class="tech-card">
-                      <img src="img/tech-oculus.png" alt="" />
+                      <img src="./img/tech/tech-oculus.png" alt="" />
                     </div>
                   </li>
                   <li class="swiper-slide">
                     <div class="tech-card">
-                      <img src="img/tech-vive.png" alt="" />
+                      <img src="./img/tech/tech-vive.png" alt="" />
                     </div>
                   </li>
                 </ul>
               </div>
               <div class="swiper-btn btn-next-tech swiper-button-lock">
                 <div class="btn-swiper">
-                  <img src="/img/btn-swiper-right.png" alt="" />
+                  <img src="./img/swiper/btn-swiper-right.png" alt="" />
                 </div>
               </div>
               <div class="swiper-btn btn-prev-tech swiper-button-lock">
                 <div class="btn-swiper">
-                  <img src="/img/btn-swiper-left.png" alt="" />
+                  <img src="./img/swiper/btn-swiper-left.png" alt="" />
                 </div>
               </div>
             </div>
@@ -337,15 +349,16 @@
           <div class="process__inner">
             <div class="row row-process">
               <div class="content-container">
-                <div class="title title-process">
+                <div class="title process__title">
                   <h2 class="title__row1 title__row1--process">HOW WE BUILD</h2>
                   <p class="title__row2 title__row2--process">WITH HYDRA VR?</p>
                 </div>
-
-                <p class="text text-process">
-                  Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa
-                  tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
-                </p>
+                <div class="text text-process">
+                  <p>
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa
+                    tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+                  </p>
+                </div>
               </div>
             </div>
             <div class="swiper-content">
@@ -399,12 +412,12 @@
               </div>
               <div class="swiper-btn btn-next-process swiper-button-lock">
                 <div class="btn-swiper">
-                  <img src="/img/btn-swiper-right.png" alt="" />
+                  <img src="./img/swiper/btn-swiper-right.png" alt="" />
                 </div>
               </div>
               <div class="swiper-btn btn-prev-process swiper-button-lock">
                 <div class="btn-swiper">
-                  <img src="/img/btn-swiper-left.png" alt="" />
+                  <img src="./img/swiper/btn-swiper-left.png" alt="" />
                 </div>
               </div>
             </div>
@@ -440,7 +453,7 @@
                 </label>
 
                 <label class="form__label form__label--message">
-                  <textarea name="message" cols="30" rows="10" name="message" placeholder="Tell Us Something..." required></textarea>
+                  <textarea cols="30" rows="10" name="message" placeholder="Tell Us Something..." required></textarea>
                 </label>
 
                 <button class="btn btn-gradient btn-long" type="submit">SEND TO HYDRA</button>
@@ -530,7 +543,7 @@
             <a class="btn btn-gradient btn-long" href="">SOCIALIZE WITH HYDRA</a>
           </div>
         </div>
-        <!-- <img class="footer__line" src="img/line-gorizontal-footer.svg" alt="" /> -->
+      
         <div class="footer__bottom">
           <p class="footer__copy"><span>2023 &copy; HYDRA LANDING PAGE</span><span>BY ZINE. E. FALOUTI</span><span>ALL RIGHTS RESERVED</span></p>
         </div>
