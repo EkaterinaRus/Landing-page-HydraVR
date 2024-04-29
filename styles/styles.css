@@ -215,14 +215,7 @@ body {
     text-transform: uppercase;
     transition-duration: var(--transition-duration);
 
-    &:hover {
-        background: linear-gradient(75.00deg, rgb(129, 118, 175) 30%, rgb(192, 183, 232) 70%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: background var(--transition-duration);
-    }
-
-    &:focus {
+    &:focus-visible {
         background: linear-gradient(75.00deg, rgb(129, 118, 175) 30%, rgb(192, 183, 232) 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -230,6 +223,20 @@ body {
 
         filter: drop-shadow(0px 4px 4px #8d84b3);
         outline: none;
+    }
+
+    &:hover {
+        background: linear-gradient(75.00deg, rgb(129, 118, 175) 30%, rgb(192, 183, 232) 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background var(--transition-duration);
+    }
+
+    &:active {
+        background: var(--pink);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background var(--transition-duration);
     }
 }
 
@@ -1170,6 +1177,28 @@ textarea {
     font-size: clamp(12px, 1.5vw, 16px);
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.footer__nav-link,
+.footer__company-link {
+
+    &:focus-visible {
+        background: linear-gradient(75.00deg, rgb(129, 118, 175) 30%, rgb(192, 183, 232) 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background var(--transition-duration);
+
+        filter: drop-shadow(0px 4px 4px #8d84b3);
+        outline: none;
+    }
+
+    &:hover {
+        background: linear-gradient(75.00deg, rgb(129, 118, 175) 30%, rgb(192, 183, 232) 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background var(--transition-duration);
+    }
+
 }
 
 .footer__social-title {
