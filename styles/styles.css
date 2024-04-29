@@ -384,6 +384,27 @@ body {
 
 }
 
+.contact .swiper-button-p:after {
+    display: none;
+    content: '';
+    background-image: url(../img/btn-navigation-contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+}
+
+.contact .swiper-button-n:after {
+    display: none;
+    content: '';
+    background-image: url(../img/btn-navigation-contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+
 .contact .swiper-button-p,
 .contact .swiper-button-n {
     position: absolute;
@@ -392,22 +413,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
     margin-top: -15px;
 
     background: transparent;
     z-index: 10;
     cursor: pointer;
 
-}
-
-.contact .swiper-button-p:after {
-    display: none;
-}
-
-.contact .swiper-button-n:after {
-    display: none;
 }
 
 .contact .swiper-button-p {
