@@ -1,6 +1,6 @@
 # [Landing page Hydra VR](https://ekaterinarus.github.io/Landing-page-HydraVR)
 ### Description
-Landing page with a VR theme with a dark background, laid out according to the layout. Responsive and adaptive design.<br> 
+Landing page with a VR theme with a dark background, laid out according to the layout. Responsive and adaptive design.
 Using **Flexbox**, **Grid**, **Swiper**. **HTML** and **CSS** validation completed.
 ### Skills
 <div>
