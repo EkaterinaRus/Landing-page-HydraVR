@@ -42,6 +42,10 @@
     padding-right: 20px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -316,7 +320,7 @@ body {
     width: var(--arrow-width);
     height: var(--arrow-height);
 
-    background: url(../icons/arrow-small-right.svg) center/contain no-repeat;
+    background: url(../img/icons/arrow-small-right.svg) center/contain no-repeat;
 }
 
 .text-gradient {
@@ -370,6 +374,8 @@ body {
     border-radius: 90px;
     box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
     background: radial-gradient(2901.00% 50.16% at 50% 54%, rgba(58, 52, 86, 0.95), rgb(33, 30, 46) 100%);
+
+    scroll-margin-top: 88px;
 }
 
 .swiper-contact {
