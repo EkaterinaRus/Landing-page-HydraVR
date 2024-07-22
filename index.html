@@ -6,15 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hydra</title>
 
-    <!-- <link rel="icon" href="favicon.ico" sizes="16x16"> -->
     <link rel="icon" href="favicon.ico" sizes="32x32">
     <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png"> <!-- 180x180 -->
-    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet" /> -->
 
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -40,13 +34,15 @@
           </div>
 
           <nav class="menu">
-            <button class="menu__btn">
+            <button class="menu__btn burger-button visible-mobile" type="button" id="open-btn">
+              <span class="visually-hidden">Open navigation menu</span>
               <span class="menu__line"></span>
               <span class="menu__line menu__line--short"></span>
               <span class="menu__line"></span>
             </button>
 
-            <ul class="menu__list">
+
+            <ul class="menu__list hidden-mobile">
               <li class="menu__list-item">
                 <a href="#about" class="menu__link">ABOUT</a>
               </li>
@@ -59,16 +55,6 @@
               <li class="menu__list-item">
                 <a href="#process" class="menu__link">HOW TO</a>
               </li>
-              <!-- <li class="menu__list-item">
-                <ul class="btn-container">
-                  <li class="btn-container__item">
-                    <a class="btn btn-border" href="#">CONTACT US</a>
-                  </li>
-                  <li class="btn-container__item">
-                    <a class="btn btn-gradient" href="#">JOIN HYDRA</a>
-                  </li>
-                </ul>
-              </li> -->
             </ul>
           </nav>
 
@@ -297,14 +283,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- <div class="foto">
-              <div class="title title-tech">
-                <h2>TECHNOLOGIES & HARDWARE</h2>
-                <p class="title__text">USED BY HYDRA VR.</p>
-              </div>
-            </div> -->
-
             <div class="swiper-content">
               <div class="swiper swiper-tech">
                 <ul class="swiper-wrapper">
@@ -551,6 +529,36 @@
       </div>
     </footer>
 
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Close navigation menu</span>
+        </button>
+      </form>
+      <nav class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="#about">ABOUT</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="#services">SERVICES</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="#tech">TECHNOLOGIES</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="#process">HOW TO</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="#contact">CONTACT US</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="#join">JOIN HYDRA</a>
+          </li>
+        </ul>
+      </nav>
+    </dialog>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
