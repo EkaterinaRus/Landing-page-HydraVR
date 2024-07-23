@@ -1,565 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hydra</title>
 
-    <link rel="icon" href="favicon.ico" sizes="32x32">
-    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png"> <!-- 180x180 -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dive into the depths of virtual reality">
+  <title>Hydra</title>
 
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-  </head>
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png"> <!-- 180x180 -->
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <div class="logo-container">
-            <div class="logo">
-              <a class="logo__link" href="">
-                <img class="logo__img" src="./img/icons/logo.svg" alt="Hydra Logo" loading="lazy" />
-              </a>
-            </div>
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
 
-            <div class="logo-text">
-              <a class="logo-text__link" href="">
-                <img class="logo-text__img" src="./img/icons/logo_text.svg" alt="Hydra Logo Text" loading="lazy" />
-              </a>
-            </div>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo-container">
+          <div class="logo">
+            <a class="logo__link" href="/">
+              <img class="logo__img" src="./img/icons/logo.svg" alt="Hydra Logo" width="102" height="102" loading="lazy" />
+            </a>
           </div>
 
-          <nav class="menu">
-            <button class="menu__btn burger-button visible-mobile" type="button" id="open-btn">
-              <span class="visually-hidden">Open navigation menu</span>
-              <span class="menu__line"></span>
-              <span class="menu__line menu__line--short"></span>
-              <span class="menu__line"></span>
-            </button>
+          <div class="logo-text">
+            <a class="logo-text__link" href="index.html">
+              <img class="logo-text__img" src="./img/icons/logo_text.svg" alt="Hydra Logo Text" loading="lazy" />
+            </a>
+          </div>
+        </div>
+
+        <nav class="menu">
+          <button class="menu__btn burger-button visible-mobile" type="button" id="open-btn">
+            <span class="visually-hidden">Open navigation menu</span>
+            <span class="menu__line"></span>
+            <span class="menu__line menu__line--short"></span>
+            <span class="menu__line"></span>
+          </button>
 
 
-            <ul class="menu__list hidden-mobile">
-              <li class="menu__list-item">
-                <a href="#about" class="menu__link">ABOUT</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="#services" class="menu__link">SERVICES</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="#tech" class="menu__link">TECHNOLOGIES</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="#process" class="menu__link">HOW TO</a>
-              </li>
-            </ul>
-          </nav>
-
-          <ul class="btn-container">
-            <li class="btn-container__item">
-              <a class="btn btn-border" href="#contact">CONTACT US</a>
+          <ul class="menu__list hidden-mobile">
+            <li class="menu__list-item">
+              <a href="#about" class="menu__link">ABOUT</a>
             </li>
-            <li class="btn-container__item">
-              <a class="btn btn-gradient" href="#join">JOIN HYDRA</a>
+            <li class="menu__list-item">
+              <a href="#services" class="menu__link">SERVICES</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#tech" class="menu__link">TECHNOLOGIES</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#process" class="menu__link">HOW TO</a>
             </li>
           </ul>
-        </div>
+        </nav>
+
+        <ul class="btn-container">
+          <li class="btn-container__item">
+            <a class="btn btn-border" href="#contact">CONTACT US</a>
+          </li>
+          <li class="btn-container__item">
+            <a class="btn btn-gradient" href="#join">JOIN HYDRA</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main class="main">
-      <h1 class="visually-hidden">HYDRA Virtual Reality</h1>
+  <main class="main">
+    <h1 class="visually-hidden">HYDRA Virtual Reality</h1>
 
-      <section class="hero">
-        <div class="container">
-          <div class="hero__inner">
-            <div class="content-container hero__container">
-              <div class="hero__content">
-                <h2 class="hero__title">
-                  <span class="text-gradient">Dive</span><span class="text-st"> Into The Depths</span><br />
-                  <span class="text-st">Of</span><span class="text-gradient"> Virtual Reality</span>
-                </h2>
-                <div class="hero__text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae .</p>
-                </div>
-                <a class="btn btn-gradient btn-long hero__btn" href="#">BUILD YOUR WORLD</a>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="content-container hero__container">
+            <div class="hero__content">
+              <h2 class="hero__title">
+                <span class="text-gradient">Dive</span><span class="text-st"> Into The Depths</span><br />
+                <span class="text-st">Of</span><span class="text-gradient"> Virtual Reality</span>
+              </h2>
+              <div class="hero__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore nisl tincidunt eget. Lectus mauris eros in vitae.</p>
               </div>
-              <div class="hero__img-container">
-                <img class="hero__img" src="./img/hero/vr_woman.jpg" alt="Young woman in virtual reality glasses" width="490" height="426" loading="lazy" />
-              </div>
+              <a class="btn btn-gradient btn-long hero__btn" href="#">BUILD YOUR WORLD</a>
+            </div>
+            <div class="hero__img-container">
+              <img class="hero__img" src="./img/hero/vr_woman.webp" alt="Young woman in virtual reality glasses"
+                width="490" height="425" />
+            </div>
+          </div>
+
+          <div class="contact" id="contact">
+            <div class="contact__container swiper-contact">
+              <ul class="swiper-wrapper contact__list">
+                <li class="contact__item contact__item--location swiper-slide">
+                  <img class="contact__icon" src="./img/icons/location.svg" alt="" />
+                  <div class="contact__content contact__content--location">
+                    <h3 class="contact__title">Pay Us a Visit</h3>
+                    <p class="contact__text">Union St, Seattle, WA 98101, United States</p>
+                  </div>
+                </li>
+
+                <li class="contact__item contact__item--phone swiper-slide">
+                  <img class="contact__icon contact__icon--phone" src="./img/icons/phone.svg" alt="" />
+                  <div class="contact__content">
+                    <h3 class="contact__title">Give Us a Call</h3>
+                    <p class="contact__text">(110) 1111-1010</p>
+                  </div>
+                </li>
+
+                <li class="contact__item contact__item--mail swiper-slide">
+                  <img class="contact__icon contact__icon--mail" src="./img/icons/mail.svg" alt="" />
+                  <div class="contact__content">
+                    <h3 class="contact__title">Send Us a Message</h3>
+                    <p class="contact__text">Contact@HydraVTech.com</p>
+                  </div>
+                </li>
+              </ul>
             </div>
 
-            <div class="contact" id="contact">
-              <div class="contact__container swiper-contact">
-                <ul class="swiper-wrapper contact__list">
-                  <li class="contact__item contact__item--location swiper-slide">
-                    <img class="contact__icon" src="./img/icons/location.svg" alt="" />
-                    <div class="contact__content contact__content--location">
-                      <h3 class="contact__title">Pay Us a Visit</h3>
-                      <p class="contact__text">Union St, Seattle, WA 98101, United States</p>
-                    </div>
-                  </li>
+            <div class="swiper-button-p"></div>
+            <div class="swiper-button-n"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                  <li class="contact__item contact__item--phone swiper-slide">
-                    <img class="contact__icon contact__icon--phone" src="./img/icons/phone.svg" alt="" />
-                    <div class="contact__content">
-                      <h3 class="contact__title">Give Us a Call</h3>
-                      <p class="contact__text">(110) 1111-1010</p>
-                    </div>
-                  </li>
-
-                  <li class="contact__item contact__item--mail swiper-slide">
-                    <img class="contact__icon contact__icon--mail" src="./img/icons/mail.svg" alt="" />
-                    <div class="contact__content">
-                      <h3 class="contact__title">Send Us a Message</h3>
-                      <p class="contact__text">Contact@HydraVTech.com</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="swiper-button-p"></div>
-              <div class="swiper-button-n"></div>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row row-introduction">
+          <div class="content-container introduction">
+            <div class="title introduction__title">
+              <h2 class="title__row1 title__row1--introduction">INTRODUCTION</h2>
+              <p class="title__row2 title__row2--introduction">TO HYDRA VR</p>
+            </div>
+            <div class="text introduction__text">
+              <p>
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus et.
+                Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris
+                commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus.
+                Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+              </p>
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="about" id="about">
-        <div class="container">
-          <div class="row row-introduction">
-            <div class="content-container introduction">
-              <div class="title introduction__title">
-                <h2 class="title__row1 title__row1--introduction">INTRODUCTION</h2>
-                <p class="title__row2 title__row2--introduction">TO HYDRA VR</p>
+        <div class="about__inner">
+          <div class="content-container about__container">
+            <img class="about__img" src="./img/about/vr_man.webp" alt="Man wearing virtual reality glasses" width="524"
+              height="557" loading="lazy" />
+
+            <div class="about__content">
+              <div class="title about__title">
+                <h2 class="title__row1 title__row1--about">ABOUT</h2>
+                <p class="title__row2">HYDRA VR</p>
               </div>
-              <div class="text introduction__text">
+              <div class="text about__text">
                 <p>
-                  Vitae sapien pellentesque habitant morbi tristique senectus et netus et. 
-                  Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris 
-                  commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. 
-                  Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+                  Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra
+                  justo.
+                  Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at
+                  risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat
+                  imperdiet sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam etiam erat velit
+                  scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec ac odio
+                  tempor
+                  orci dapibus. Sem nulla pha retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam
+                  sollicitudi n tempor.
+                </p>
+              </div>
+              <button class="btn btn-gradient btn-long">LET’S GET IN TOUCH</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="services__inner">
+          <div class="row row-services">
+            <div class="content-container">
+              <div class="title services__title">
+                <h2 class="title__row1 title__row1--services">WHY BUILD</h2>
+                <p class="title__row2 title__row2--services">WITH HYDRA?</p>
+              </div>
+              <div class="text services__text">
+                <p>
+                  Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar
+                  proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa
+                  tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus
+                  magna fringilla urna porttitor rhoncus vitae.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="about__inner">
-            <div class="content-container about__container">
-              <img class="about__img" src="./img/about/vr_man.jpg" alt="Man wearing virtual reality glasses" width="524" height="557" loading="lazy" />
-
-              <div class="about__content">
-                <div class="title about__title">
-                  <h2 class="title__row1 title__row1--about">ABOUT</h2>
-                  <p class="title__row2">HYDRA VR</p>
-                </div>
-                <div class="text about__text">
-                  <p>
-                    Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. 
-                    Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at 
-                    risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat 
-                    imperdiet sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam etiam erat velit 
-                    scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec ac odio tempor 
-                    orci dapibus. Sem nulla pha retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n tempor.
-                  </p>
-                </div>
-                <button class="btn btn-gradient btn-long">LET’S GET IN TOUCH</button>
+          <div class="swiper-content">
+            <div class="swiper-btn btn-prev-services swiper-button-lock">
+              <div class="btn-swiper">
+                <img src="./img/swiper/btn-swiper-left.png" alt="" />
               </div>
+            </div>
+            <div class="swiper-btn btn-next-services swiper-button-lock">
+              <div class="btn-swiper">
+                <img src="./img/swiper/btn-swiper-right.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper swiper-services">
+              <ul class="swiper-wrapper swiper-wrapper-services">
+                <li class="swiper-slide">
+                  <div class="card">
+                    <div class="card__content">
+                      <div class="card__image">
+                        <img class="image" src="./img/services/simulation.jpg"
+                          alt="Young woman in virtual reality glasses with controllers in hands" width="190"
+                          height="190" loading="lazy" />
+                      </div>
+                      <h3 class="card__title">SIMULATION</h3>
+                      <div class="card__text">
+                        <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo
+                          laoreet sit amet vitae.</p>
+                      </div>
+
+                      <button class="btn btn-gradient card__btn">TRY IT NOW</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="card">
+                    <div class="card__content">
+                      <div class="card__image">
+                        <img class="image" src="./img/services/education.jpg" alt="Guy wearing virtual reality glasses"
+                          width="190" height="190" loading="lazy" />
+                      </div>
+                      <h3 class="card__title">EDUCATION</h3>
+                      <div class="card__text">
+                        <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo
+                          laoreet sit amet vitae.</p>
+                      </div>
+                      <button class="btn btn-gradient card__btn">TRY IT NOW</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="card">
+                    <div class="card__content">
+                      <div class="card__image">
+                        <img class="image" src="./img/services/self-care.jpg"
+                          alt="Young woman in lotus position wearing virtual reality glasses" width="190" height="190"
+                          loading="lazy" />
+                      </div>
+                      <h3 class="card__title">SELF-CARE</h3>
+                      <div class="card__text">
+                        <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo
+                          laoreet sit amet vitae.</p>
+                      </div>
+                      <button class="btn btn-gradient card__btn">TRY IT NOW</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="card">
+                    <div class="card__content">
+                      <div class="card__image">
+                        <img class="image" src="./img/services/outdoor.jpg"
+                          alt="Man wearing virtual reality glasses in nature" width="190" height="190" loading="lazy" />
+                      </div>
+                      <h3 class="card__title">OUTDOOR</h3>
+                      <div class="card__text">
+                        <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo
+                          laoreet sit amet vitae.</p>
+                      </div>
+                      <button class="btn btn-gradient card__btn">TRY IT NOW</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="services" id="services">
-        <div class="container">
-          <div class="services__inner">
-            <div class="row row-services">
-              <div class="content-container">
-                <div class="title services__title">
-                  <h2 class="title__row1 title__row1--services">WHY BUILD</h2>
-                  <p class="title__row2 title__row2--services">WITH HYDRA?</p>
-                </div>
-                <div class="text services__text">
-                  <p>
-                    Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa
-                    tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-content">
-              <div class="swiper swiper-services">
-                <ul class="swiper-wrapper swiper-wrapper-services">
-                  <li class="swiper-slide">
-                    <div class="card">
-                      <div class="card__content">
-                        <div class="card__image">
-                          <img class="image" src="./img/services/simulation.jpg" alt="Young woman in virtual reality glasses with controllers in hands" width="190" height="190" loading="lazy" />
-                        </div>
-                        <h3 class="card__title">SIMULATION</h3>
-                        <div class="card__text">
-                          <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
-                        </div>
-
-                        <button class="btn btn-gradient card__btn">TRY IT NOW</button>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="card">
-                      <div class="card__content">
-                        <div class="card__image">
-                          <img class="image" src="./img/services/education.jpg" alt="Guy wearing virtual reality glasses" width="190" height="190" loading="lazy" />
-                        </div>
-                        <h3 class="card__title">EDUCATION</h3>
-                        <div class="card__text">
-                          <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
-                        </div>
-                        <button class="btn btn-gradient card__btn">TRY IT NOW</button>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="card">
-                      <div class="card__content">
-                        <div class="card__image">
-                          <img class="image" src="./img/services/self-care.jpg" alt="Young woman in lotus position wearing virtual reality glasses" width="190" height="190" loading="lazy" />
-                        </div>
-                        <h3 class="card__title">SELF-CARE</h3>
-                        <div class="card__text">
-                          <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
-                        </div>
-                        <button class="btn btn-gradient card__btn">TRY IT NOW</button>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="card">
-                      <div class="card__content">
-                        <div class="card__image">
-                          <img class="image" src="./img/services/outdoor.jpg" alt="Man wearing virtual reality glasses in nature" width="190" height="190" loading="lazy" />
-                        </div>
-                        <h3 class="card__title">OUTDOOR</h3>
-                        <div class="card__text">
-                          <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
-                        </div>
-                        <button class="btn btn-gradient card__btn">TRY IT NOW</button>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="swiper-btn btn-next-services swiper-button-lock">
-                <div class="btn-swiper">
-                  <img src="./img/swiper/btn-swiper-right.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-btn btn-prev-services swiper-button-lock">
-                <div class="btn-swiper">
-                  <img src="./img/swiper/btn-swiper-left.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="tech" id="tech">
-        <div class="container">
-          <div class="tech__inner">
-            <div class="image-container">
-              <picture>
-                <img src="./img/tech/tech-img.png" alt="Your Image" />
-              </picture>
-
-              <div class="text-overlay">
-                <div class="title tech__title">
-                  <h2 class="title__row1 title__row1--tech">TECHNOLOGIES & HARDWARE</h2>
-                  <p class="title__row2 title__row2--tech">USED BY HYDRA VR.</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-content">
-              <div class="swiper swiper-tech">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <div class="tech-card">
-                      <img src="./img/tech/tech-unreal.png" alt="" />
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="tech-card">
-                      <img src="./img/tech/tech-unity.png" alt="" />
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="tech-card">
-                      <img src="./img/tech/tech-oculus.png" alt="" />
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="tech-card">
-                      <img src="./img/tech/tech-vive.png" alt="" />
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="swiper-btn btn-next-tech swiper-button-lock">
-                <div class="btn-swiper">
-                  <img src="./img/swiper/btn-swiper-right.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-btn btn-prev-tech swiper-button-lock">
-                <div class="btn-swiper">
-                  <img src="./img/swiper/btn-swiper-left.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="process" id="process">
-        <div class="container">
-          <div class="process__inner">
-            <div class="row row-process">
-              <div class="content-container">
-                <div class="title process__title">
-                  <h2 class="title__row1 title__row1--process">HOW WE BUILD</h2>
-                  <p class="title__row2 title__row2--process">WITH HYDRA VR?</p>
-                </div>
-                <div class="text text-process">
-                  <p>
-                    Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa
-                    tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-content">
-              <div class="swiper swiper-process">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <div class="card-process">
-                      <div class="circle">
-                        <div class="circle__inner">01</div>
-                      </div>
-                      <p class="card-process__text">
-                        3D Conception <br />
-                        & Design
-                      </p>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="card-process">
-                      <div class="circle">
-                        <div class="circle__inner">02</div>
-                      </div>
-                      <p class="card-process__text">
-                        Interaction <br />
-                        Design
-                      </p>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="card-process">
-                      <div class="circle">
-                        <div class="circle__inner">03</div>
-                      </div>
-                      <p class="card-process__text">
-                        VR World <br />
-                        User Testing
-                      </p>
-                    </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <div class="card-process">
-                      <div class="circle">
-                        <div class="circle__inner">04</div>
-                      </div>
-                      <p class="card-process__text">
-                        Hydra VR <br />
-                        Deploy
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="swiper-btn btn-next-process swiper-button-lock">
-                <div class="btn-swiper">
-                  <img src="./img/swiper/btn-swiper-right.png" alt="" />
-                </div>
-              </div>
-              <div class="swiper-btn btn-prev-process swiper-button-lock">
-                <div class="btn-swiper">
-                  <img src="./img/swiper/btn-swiper-left.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="optin" id="join">
-        <div class="container">
-          <div class="optin__inner">
-            <div class="form">
-              <h2 class="title form__title">JOIN HYDRA</h2>
-              <p class="form__title-text">Let’s Build Your VR Experience</p>
-              <form class="form__body" action="#" id="form" name="join_hydra">
-                <label class="form__label">
-                  <input class="form__input" type="text" name="name" placeholder="First Name" required />
-                </label>
-
-                <label class="form__label">
-                  <input class="form__input" type="text" name="surname" placeholder="Last Name" required />
-                </label>
-
-                <label class="form__label form__label--email">
-                  <input class="form__input" type="text" name="email" placeholder="Email" required />
-                </label>
-
-                <label class="form__label form__label--phone">
-                  <input class="form__input" type="text" name="phone" placeholder="Phone Number" required />
-                </label>
-
-                <label class="form__label form__label--subject">
-                  <input class="form__input form__input--subject" type="text" name="subject" placeholder="Subject" required />
-                </label>
-
-                <label class="form__label form__label--message">
-                  <textarea cols="30" rows="10" name="message" placeholder="Tell Us Something..." required></textarea>
-                </label>
-
-                <button class="btn btn-gradient btn-long" type="submit">SEND TO HYDRA</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="logo footer__logo">
-            <a class="logo__link" href="#">
-              <img class="logo__img logo__img--footer" src="./img/icons/logo.svg" alt="Logo" />
-            </a>
-          </div>
-
-          <ul class="footer__nav">
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#about">ABOUT</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#services">SERVICES</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#tech">TECHNOLOGIES</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#process">HOW TO</a>
-            </li>
-            <li class="footer__nav-item">
-              <a class="footer__nav-link" href="#join">JOIN HYDRA</a>
-            </li>
-          </ul>
-
-          <ul class="footer__company">
-            <li class="footer__company-item">
-              <a class="footer__company-link" href="#">F.A.Q</a>
-            </li>
-            <li class="footer__company-item">
-              <a class="footer__company-link" href="#">SITEMAP</a>
-            </li>
-            <li class="footer__company-item">
-              <a class="footer__company-link" href="#">CONDITIONS</a>
-            </li>
-            <li class="footer__company-item">
-              <a class="footer__company-link" href="#">LICENSES</a>
-            </li>
-          </ul>
-
-          <div class="footer__social">
-            <h4 class="footer__social-title">SOCIALIZE WITH HYDRA</h4>
-            <ul class="footer__social-list">
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="https://www.facebook.com/" target="_blank">
-                  <img src="./img/icons/facebook.svg" alt="Facebook" />
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="https://twitter.com/" target="_blank">
-                  <img src="./img/icons/twitter.svg" alt="Twitter" />
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="https://linkedin.com/" target="_blank">
-                  <img src="./img/icons/linkedin.svg" alt="Linkedin" />
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="https://www.youtube.com/" target="_blank">
-                  <img src="./img/icons/youtube.svg" alt="Youtube" />
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="https://instagram.com/" target="_blank">
-                  <img src="./img/icons/instagram.svg" alt="Instagram" />
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="https://pinterest.com/" target="_blank">
-                  <img src="./img/icons/pinterest.svg" alt="Pinterest" />
-                </a>
-              </li>
-            </ul>
-            <a class="btn btn-gradient btn-long" href="">SOCIALIZE WITH HYDRA</a>
-          </div>
-        </div>
-      
-        <div class="footer__bottom">
-          <p class="footer__copy"><span>2023 &copy; HYDRA LANDING PAGE</span><span>BY ZINE. E. FALOUTI</span><span>ALL RIGHTS RESERVED</span></p>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
-      <form class="mobile-overlay__close-button-wrapper" method="dialog">
-        <button class="mobile-overlay__close-button cross-button" type="submit">
-          <span class="visually-hidden">Close navigation menu</span>
-        </button>
-      </form>
-      <nav class="mobile-overlay__body">
-        <ul class="mobile-overlay__list">
-          <li class="mobile-overlay__item">
-            <a class="mobile-overlay__link" href="#about">ABOUT</a>
+    <section class="tech" id="tech">
+      <div class="container">
+        <div class="tech__inner">
+          <div class="image-container">
+            <picture>
+              <img src="./img/tech/tech-img.webp" alt="Your Image" />
+            </picture>
+
+            <div class="text-overlay">
+              <div class="title tech__title">
+                <h2 class="title__row1 title__row1--tech">TECHNOLOGIES & HARDWARE</h2>
+                <p class="title__row2 title__row2--tech">USED BY HYDRA VR.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-content">
+            <div class="swiper swiper-tech">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="tech-card">
+                    <img src="./img/tech/tech-unreal.png" alt="" />
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="tech-card">
+                    <img src="./img/tech/tech-unity.png" alt="" />
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="tech-card">
+                    <img src="./img/tech/tech-oculus.png" alt="" />
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="tech-card">
+                    <img src="./img/tech/tech-vive.png" alt="" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-btn btn-next-tech swiper-button-lock">
+              <div class="btn-swiper">
+                <img src="./img/swiper/btn-swiper-right.png" alt="" width="12" height="20" />
+              </div>
+            </div>
+            <div class="swiper-btn btn-prev-tech swiper-button-lock">
+              <div class="btn-swiper">
+                <img src="./img/swiper/btn-swiper-left.png" alt="" width="12" height="20" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container">
+        <div class="process__inner">
+          <div class="row row-process">
+            <div class="content-container">
+              <div class="title process__title">
+                <h2 class="title__row1 title__row1--process">HOW WE BUILD</h2>
+                <p class="title__row2 title__row2--process">WITH HYDRA VR?</p>
+              </div>
+              <div class="text text-process">
+                <p>
+                  Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar
+                  proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa
+                  tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus
+                  magna fringilla urna porttitor rhoncus vitae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-content">
+            <div class="swiper swiper-process">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="card-process">
+                    <div class="circle">
+                      <div class="circle__inner">01</div>
+                    </div>
+                    <p class="card-process__text">
+                      3D Conception <br />
+                      & Design
+                    </p>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="card-process">
+                    <div class="circle">
+                      <div class="circle__inner">02</div>
+                    </div>
+                    <p class="card-process__text">
+                      Interaction <br />
+                      Design
+                    </p>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="card-process">
+                    <div class="circle">
+                      <div class="circle__inner">03</div>
+                    </div>
+                    <p class="card-process__text">
+                      VR World <br />
+                      User Testing
+                    </p>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="card-process">
+                    <div class="circle">
+                      <div class="circle__inner">04</div>
+                    </div>
+                    <p class="card-process__text">
+                      Hydra VR <br />
+                      Deploy
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-btn btn-next-process swiper-button-lock">
+              <div class="btn-swiper">
+                <img src="./img/swiper/btn-swiper-right.png" alt="" width="12" height="20" />
+              </div>
+            </div>
+            <div class="swiper-btn btn-prev-process swiper-button-lock">
+              <div class="btn-swiper">
+                <img src="./img/swiper/btn-swiper-left.png" alt="" width="12" height="20" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="optin" id="join">
+      <div class="container">
+        <div class="optin__inner">
+          <div class="form">
+            <h2 class="title form__title">JOIN HYDRA</h2>
+            <p class="form__title-text">Let’s Build Your VR Experience</p>
+            <form class="form__body" action="#" id="form" name="join_hydra">
+              <label class="form__label">
+                <input class="form__input" type="text" name="name" placeholder="First Name" required />
+              </label>
+
+              <label class="form__label">
+                <input class="form__input" type="text" name="surname" placeholder="Last Name" required />
+              </label>
+
+              <label class="form__label form__label--email">
+                <input class="form__input" type="text" name="email" placeholder="Email" required />
+              </label>
+
+              <label class="form__label form__label--phone">
+                <input class="form__input" type="text" name="phone" placeholder="Phone Number" required />
+              </label>
+
+              <label class="form__label form__label--subject">
+                <input class="form__input form__input--subject" type="text" name="subject" placeholder="Subject"
+                  required />
+              </label>
+
+              <label class="form__label form__label--message">
+                <textarea cols="30" rows="10" name="message" placeholder="Tell Us Something..." required></textarea>
+              </label>
+
+              <button class="btn btn-gradient btn-long" type="submit">SEND TO HYDRA</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h2 class="visually-hidden">Useful links</h2>
+    <div class="container">
+      <div class="footer__inner">
+        <div class="logo footer__logo">
+          <a class="logo__link footer__link" href="#">
+            <img class="logo__img logo__img--footer" src="./img/icons/logo.svg" alt="Logo" width="185" height="185" />
+          </a>
+        </div>
+
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#about">ABOUT</a>
           </li>
-          <li class="mobile-overlay__item">
-            <a class="mobile-overlay__link" href="#services">SERVICES</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#services">SERVICES</a>
           </li>
-          <li class="mobile-overlay__item">
-            <a class="mobile-overlay__link" href="#tech">TECHNOLOGIES</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#tech">TECHNOLOGIES</a>
           </li>
-          <li class="mobile-overlay__item">
-            <a class="mobile-overlay__link" href="#process">HOW TO</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#process">HOW TO</a>
           </li>
-          <li class="mobile-overlay__item">
-            <a class="mobile-overlay__link" href="#contact">CONTACT US</a>
-          </li>
-          <li class="mobile-overlay__item">
-            <a class="mobile-overlay__link" href="#join">JOIN HYDRA</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#join">JOIN HYDRA</a>
           </li>
         </ul>
-      </nav>
-    </dialog>
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+
+        <ul class="footer__company">
+          <li class="footer__company-item">
+            <a class="footer__company-link" href="#">F.A.Q</a>
+          </li>
+          <li class="footer__company-item">
+            <a class="footer__company-link" href="#">SITEMAP</a>
+          </li>
+          <li class="footer__company-item">
+            <a class="footer__company-link" href="#">CONDITIONS</a>
+          </li>
+          <li class="footer__company-item">
+            <a class="footer__company-link" href="#">LICENSES</a>
+          </li>
+        </ul>
+
+        <div class="footer__social">
+          <h3 class="footer__social-title">SOCIALIZE WITH HYDRA</h3>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://www.facebook.com/" target="_blank">
+                <img src="./img/icons/facebook.svg" alt="Facebook" width="32" height="32" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://twitter.com/" target="_blank">
+                <img src="./img/icons/twitter.svg" alt="Twitter" width="32" height="32" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://linkedin.com/" target="_blank">
+                <img src="./img/icons/linkedin.svg" alt="Linkedin" width="32" height="32" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://www.youtube.com/" target="_blank">
+                <img src="./img/icons/youtube.svg" alt="Youtube" width="32" height="32" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://instagram.com/" target="_blank">
+                <img src="./img/icons/instagram.svg" alt="Instagram" width="32" height="32" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://pinterest.com/" target="_blank">
+                <img src="./img/icons/pinterest.svg" alt="Pinterest" width="32" height="32" />
+              </a>
+            </li>
+          </ul>
+          <a class="btn btn-gradient btn-long" href="">SOCIALIZE WITH HYDRA</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy"><span>2023 &copy; HYDRA LANDING PAGE</span><span>BY ZINE. E. FALOUTI</span><span>ALL
+            RIGHTS RESERVED</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button class="mobile-overlay__close-button cross-button" type="submit">
+        <span class="visually-hidden">Close navigation menu</span>
+      </button>
+    </form>
+    <nav class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#about">ABOUT</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#services">SERVICES</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#tech">TECHNOLOGIES</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#process">HOW TO</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#contact">CONTACT US</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#join">JOIN HYDRA</a>
+        </li>
+      </ul>
+    </nav>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
